@@ -1,0 +1,21 @@
+# Utility scripts
+crop_photo.py
+anonymize.py
+
+# Raw/source images (not for public)
+images/padelboys-raw.png
+images/dan-icc-crop.jpg
+images/dan-rya-crop.jpg
+images/avatar-github.jpg
+images/tunetrail-home.png
+
+# Design drafts
+option-a.html
+option-b.html
+
+# Dev server config
+.claude/
+
+# OS
+.DS_Store
+Thumbs.db
