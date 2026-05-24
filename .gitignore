@@ -1,6 +1,7 @@
 # Utility scripts
 crop_photo.py
 anonymize.py
+generate_cv_pdf.py
 
 # Raw/source images (not for public)
 images/padelboys-raw.png
