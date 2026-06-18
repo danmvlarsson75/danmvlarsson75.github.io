@@ -89,6 +89,9 @@
     /* ── PROJECTS ── */
     .proj-intro { display: grid; grid-template-columns: 1fr 2fr; gap: 3rem; align-items: start; margin-bottom: 3rem; }
     .proj-intro p { color: var(--muted); font-size: 1rem; line-height: 1.8; padding-top: 0.25rem; }
+    .proj-spotlight { margin-bottom: 1.25rem; }
+    .proj-spotlight .proj-card { background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%); border-color: rgba(37,99,235,0.18); box-shadow: 0 18px 40px rgba(37,99,235,0.12); }
+    .proj-spotlight .proj-card:hover { border-color: var(--blue); box-shadow: 0 22px 48px rgba(37,99,235,0.16); }
     .proj-featured { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; margin-bottom: 1.25rem; }
     .proj-card { background: var(--white); border: 1px solid var(--border); border-radius: 12px; padding: 1.75rem; transition: all 0.2s; display: flex; flex-direction: column; gap: 0; }
     .proj-card:hover { border-color: var(--blue); transform: translateY(-3px); box-shadow: 0 12px 32px rgba(0,0,0,0.08); }
@@ -103,6 +106,7 @@
     .lang-py { color: #d97706; }
     .proj-card h3 { font-size: 1.05rem; font-weight: 800; color: var(--navy); margin-bottom: 0.6rem; letter-spacing: -0.01em; }
     .proj-card p { font-size: 0.85rem; color: var(--muted); line-height: 1.65; }
+    .proj-card p + p { margin-top: 0.75rem; }
     .proj-tech { margin-top: 1rem; font-size: 0.72rem; color: var(--muted); font-weight: 500; }
     .proj-link { margin-top: 0.75rem; display: inline-flex; align-items: center; gap: 0.35rem; font-size: 0.78rem; font-weight: 700; color: var(--blue); text-decoration: none; }
     .proj-link:hover { text-decoration: underline; }
@@ -274,9 +278,19 @@
     <div class="proj-intro">
       <div>
         <div class="section-label">Building in 2026</div>
-        <h2>Ten products.<br/>One year.</h2>
+        <h2>Eleven products.<br/>One year.</h2>
       </div>
-      <p>Production-grade TypeScript applications across padel club management, kayaking navigation, music gaming, children's education, football quizzes, golf tracking, logistics dispatch — each solving a real problem for real people. Built with AI, deployed with intent.</p>
+      <p>Production-grade TypeScript applications across hospitality, padel club management, kayaking navigation, music gaming, children's education, football quizzes, golf tracking, and logistics dispatch — each solving a real problem for real people. Built with AI, deployed with intent.</p>
+    </div>
+
+    <div class="proj-spotlight">
+      <div class="proj-card">
+        <p class="proj-lang lang-ts">TypeScript · Hospitality Platform</p>
+        <h3>Husby Wärdshus</h3>
+        <p>Hospitality product for Husby Wärdshus, built to support day-to-day operations with a modern booking and service flow tailored to a real business. The platform highlights a production-ready web stack and the ability to turn a traditional hospitality operation into a smoother digital customer experience.</p>
+        <p>Stripe-powered online payments are a core part of the solution, making it easy to handle paid bookings and customer transactions without pushing work back into manual admin.</p>
+        <div class="proj-tech">React · TypeScript · Supabase · Stripe · Edge Functions</div>
+      </div>
     </div>
 
     <!-- Featured: top 2 -->
