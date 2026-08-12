@@ -278,9 +278,9 @@
     <div class="proj-intro">
       <div>
         <div class="section-label">Building in 2025–2026</div>
-        <h2>Eleven products.<br/>Two years.</h2>
+        <h2>Fourteen products.<br/>Two years.</h2>
       </div>
-      <p>Production-grade TypeScript applications across hospitality, padel club management, kayaking navigation, music gaming, children's education, football quizzes, golf tracking, and logistics dispatch — each solving a real problem for real people. Built with AI, deployed with intent.</p>
+      <p>Production-grade applications across padel, hospitality, music gaming, football quizzes, golf tracking, logistics, IoT, e-commerce, transfer booking, and data engineering — each solving a real problem for real people. Built with AI, deployed with intent.</p>
     </div>
 
     <div class="proj-spotlight">
@@ -323,15 +323,8 @@
 
     </div>
 
-    <!-- Remaining 8 projects -->
+    <!-- Remaining projects -->
     <div class="proj-grid">
-
-      <div class="proj-card">
-        <p class="proj-lang lang-ts">TypeScript · PWA</p>
-        <h3>Paddla.app</h3>
-        <p>Offline-first kayaking navigation PWA for the Swedish coast — architecture chosen to handle the poor mobile coverage of coastal waters where the app actually gets used. Mapbox GL with Cloudflare edge delivery; community POIs, water routing, and full offline support.</p>
-        <div class="proj-tech">React · Mapbox GL · Supabase · Cloudflare Workers</div>
-      </div>
 
       <div class="proj-card">
         <p class="proj-lang lang-ts">TypeScript · Multiplayer Game</p>
@@ -348,17 +341,46 @@
       </div>
 
       <div class="proj-card">
-        <p class="proj-lang lang-ts">TypeScript · Education</p>
-        <h3>Stella's Engelska</h3>
-        <p>Swedish children's English learning app — vocabulary drills, school content, progress tracking, and push notification reminders. Role-based access for student and teacher.</p>
-        <div class="proj-tech">React · Supabase · PWA · Push API</div>
-      </div>
-
-      <div class="proj-card">
         <p class="proj-lang lang-ts">TypeScript · Business</p>
         <h3>Astarea</h3>
         <p>Logistics dispatch management system — agency management, vehicle registry, job dispatch, real-time sales reports, role-based auth with pending approval flows. Built for a transport operation in Cancun.</p>
         <div class="proj-tech">React · Supabase · Tailwind · Edge Functions</div>
+      </div>
+
+      <div class="proj-card">
+        <p class="proj-lang lang-ts">TypeScript · IoT</p>
+        <h3>AskNetatmo</h3>
+        <p>ChatGPT-style interface for Netatmo personal weather station owners. Sensor readings synced on a cron schedule via Cloudflare Workers, stored in Supabase, and queryable in natural language.</p>
+        <div class="proj-tech">React · Supabase · Cloudflare Workers · TypeScript</div>
+      </div>
+
+      <div class="proj-card">
+        <p class="proj-lang lang-py">Python · Data</p>
+        <h3>SystembolAIget</h3>
+        <p>LLM-queryable copy of Systembolaget's full ~25k product catalog, working around the API's 10k cap via category and price sharding. Text-to-SQL via OpenRouter; enriched with APK (grams of alcohol per krona) and other derived metrics. CLI + ChatGPT-style web UI.</p>
+        <a href="https://systembolaiget.pages.dev" target="_blank" rel="noopener" class="proj-link">systembolaiget.pages.dev ↗</a>
+        <div class="proj-tech">Python · Supabase · Cloudflare Pages · OpenRouter</div>
+      </div>
+
+      <div class="proj-card">
+        <p class="proj-lang lang-ts">TypeScript · E-commerce</p>
+        <h3>Crystalinda</h3>
+        <p>E-commerce site for a handmade crystal jewellery brand in Mallorca — product catalogue with category filtering, order flow, photo gallery, and a full admin panel for inventory and order management.</p>
+        <div class="proj-tech">Astro · Cloudflare Pages · D1</div>
+      </div>
+
+      <div class="proj-card">
+        <p class="proj-lang lang-ts">TypeScript · Business</p>
+        <h3>RideCancun</h3>
+        <p>Airport transfer and tour booking platform for Cancun — multilingual (ES/EN), Stripe payments, Google Maps route display, QR-code vouchers, and PDF booking confirmations.</p>
+        <div class="proj-tech">Next.js · Supabase · Stripe · Google Maps · Tailwind</div>
+      </div>
+
+      <div class="proj-card">
+        <p class="proj-lang lang-py">Python · Data Engineering</p>
+        <h3>EmpirBus</h3>
+        <p>Configuration intelligence tool for EmpirBus marine electronics (Garmin) — decodes complete installation bundles cross-linking firmware, display logic, and installer I/O schedules into a queryable registry. Surfaced version mismatches in live vessels that no existing tooling catches.</p>
+        <div class="proj-tech">Python · SQL · Data Engineering</div>
       </div>
 
       <div class="proj-card">
